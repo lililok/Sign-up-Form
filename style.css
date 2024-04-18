@@ -1,3 +1,22 @@
 body {
-    
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar {
+    background-image: url('images/ingrid-salmanca-Y6OKbIFe4Z0-unsplash.jpg');
+    background-size: cover; 
+    background-position: center;
+    width: 600px;
+    height: 100%;
+}
+
+.image-sidebar {
+    background-image: url('images/beach-ball.png'); 
+    width: 150px;
+    height: 150px; 
+    background-size: cover; 
+    background-position: center; 
+    background-color: rgba(0, 0, 0, 0.5);
 }
