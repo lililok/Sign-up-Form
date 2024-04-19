@@ -10,6 +10,7 @@ body {
     background-position: center;
     width: 600px;
     height: 100%;
+    text-align: center;
 }
 
 .image-sidebar {
@@ -18,5 +19,12 @@ body {
     height: 150px; 
     background-size: cover; 
     background-position: center; 
-    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: block; 
+}
+
+.credits {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
