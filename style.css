@@ -13,22 +13,37 @@ body {
     width: 600px;
     height: 100%;
     text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-.image-sidebar {
+#logo-sidebar {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    width: 100%;
+    height: 200px;
+}
+
+#image-sidebar {
     background-image: url('images/beach-ball.png'); 
     width: 150px;
     height: 150px; 
     background-size: cover; 
     background-position: center; 
-    position: absolute;
-    display: block; 
+}
+
+#logo-sidebar-text {
+    color: aliceblue;
+    font-size: 50px;
 }
 
 .credits {
     position: absolute;
     bottom: 0;
-    left: 0;
+    color: aliceblue;
 }
 
 .container {
@@ -43,4 +58,8 @@ body {
     background-color: lightgray; 
     padding: 20px;
     border: 1px solid black;
+}
+
+#form {
+
 }
