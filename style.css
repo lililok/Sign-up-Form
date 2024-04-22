@@ -4,6 +4,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: row;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .sidebar {
@@ -22,9 +23,10 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 10vh;
     width: 100%;
-    height: 200px;
+    height: 220px;
 }
 
 #image-sidebar {
@@ -33,6 +35,7 @@ body {
     height: 150px; 
     background-size: cover; 
     background-position: center; 
+    margin-right: 10px;
 }
 
 #logo-sidebar-text {
@@ -54,12 +57,85 @@ body {
 }
 
 .row {
-    flex: 1; 
-    background-color: lightgray; 
+    flex: 1;  
     padding: 20px;
-    border: 1px solid black;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+#quote {
+    background-color: #FFF7D4;
+    align-content: end;
+}
+
+#account {
+    background-color: #FFF7D4;
+}
+
+button {
+    border: 0;
+    padding: 20px;
 }
 
 #form {
+    background-color: #EEC759;
+}
 
+input, label {
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+#pink {
+    text-shadow: 2px 2px 0 #f25e91;
+}
+
+#pink:hover {
+    color: #f25e91;
+}
+
+#blue {
+    text-shadow: 2px 2px 0 #60b5d6;
+}
+
+#blue:hover {
+    color: #60b5d6;
+}
+
+#cyan {
+    text-shadow: 2px 2px 0 #67e9e7;
+}
+
+#cyan:hover {
+    color: #67e9e7;
+}
+
+#orange {
+    text-shadow: 2px 2px 0 #fc954c;
+}
+
+#orange:hover {
+    color: #fc954c;
+}
+
+#yellow {
+    text-shadow: 2px 2px 0 #fce06f;
+}
+
+#yellow:hover {
+    color: #fce06f;
+}
+
+#green:hover {
+    text-shadow: 2px 2px 0 #9ac470;
+}
+
+#green:hover {
+    color: #9ac470;
 }
