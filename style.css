@@ -103,6 +103,11 @@ button {
     background-color: #EEC759;
 }
 
+.line {
+    display: flex;
+
+}
+
 input, label {
     display: block;
 }
