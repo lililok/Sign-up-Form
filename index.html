@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="password.js" defer></script>
 </head>
 <body>
     <div class="sidebar"><div id="logo-sidebar"><div id="image-sidebar"></div>
@@ -22,24 +26,24 @@
         <form action="example.com/path" method="post">
             <div class="line">
                 <div class="column"><label for="first_name">First name</label>
-                <input type="text" id="first_name"></div>
+                <input type="text" id="first_name" required></div>
                 <div class="column"><label for="last_name">Last name</label>
-                <input type="text" id="last_name"></div>
+                <input type="text" id="last_name" required></div>
             </div>
             <div class="line">
                 <div class="column"><label for="email">Email</label>
-                <input type="user_email" id="email"></div>
+                <input type="email" id="email" required></div>
                 <div class="column"><label for="phone_number">Phone number</label>
-                <input type="tel" id="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></div>
+                <input type="tel" id="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></div>
             </div>
             <div class="line">
                 <div class="column"><label for="password">Password</label>
-                <input type="password" id="password" required></div>
+                <input type="password" class="password"id="password" required></div>
                 <div class="column"><label for="password_validation">Confirm password</label>
-                <input type="password" id="password_validation" required></div>
+                <input type="password" class="password" id="password_validation" required></div>
             </div>
           </div>
-    <div class="row" id="account"><button type="submit">Create Account</button></form><p>Already have an account? <a href="" target="_blank">Log in</a></p></div>
+    <div class="row" id="account"><button type="submit">Create Account</button></form><p id="question">Already have an account? <a href="" target="_blank">Log in</a></p></div>
     </div>
 </body>
 </html>
