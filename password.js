@@ -1,12 +1,9 @@
-document.getElementsByClassName("password").addEventListener( {
-
-    var password = document.getElementById("password").value;
-    var confirmPassword = document.getElementById("password_validation").value;
-    if (password === confirmPassword) {
-        document.getElementById("message").innerHTML = "Passwords match!";
-        document.getElementById("message").style.color = "green";
+function onChange() {
+    const password = document.querySelector('input[name=password]');
+    const confirm = document.querySelector('input[name=confirm]');
+    if (confirm.value === password.value) {
+      confirm.setCustomValidity('');
     } else {
-        document.getElementById("message").innerHTML = "Passwords do not match!";
-        document.getElementById("message").style.color = "red";
+      confirm.setCustomValidity('Passwords do not match');
     }
-});
+  }
